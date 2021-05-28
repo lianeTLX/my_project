@@ -1,0 +1,50 @@
+@themeColor1: #ff8b8b;
+@themeColor2: #f9f7e8;
+@themeColor3: #61bfad;
+@themeColor4: #a7bbc3;
+@themeColor5: #C886A2;
+@themeColor6:#d1e9e3;
+@themeColor7:#f3bfa9;
+@themeLightColor1 : #fedccc;
+@themeLightColor2: #ffefe5;
+
+.btnSmaller,.btnBigger{
+  display: inline-block;
+  line-height: 18px;
+  background: @themeColor3;
+  color: #fff;
+  border-radius: 14px;
+  font-size: 10px;
+  cursor: pointer;
+  margin: 5px;
+  &:hover{
+    background: @themeColor7;
+  }
+  &.disabled{
+    background: #ddd;
+  }
+}
+.btnSmaller{
+  padding: 6px 15px;
+}
+.btnBigger {
+  padding: 10px 35px;
+  font-size: 16px;
+}
+
+.myInput {
+  border: 1px solid #ccc;
+  color: #666;
+  padding: 0 15px;
+  height: 35px;
+  &.err{
+    border-color: @themeColor7
+  }
+}
+
+
+.warning{
+  color: @themeColor1;
+  font-size: 14px;
+  margin-left: 12px;
+}
